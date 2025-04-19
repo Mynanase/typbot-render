@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-typbot-render",
   "description": "A plugin for rendering Typst markup, script and math formulas using local Typst CLI.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -10,11 +10,17 @@
     "README.md"
   ],
   "license": "MIT",
-  "author": "Your Name",
-  "homepage": "https://github.com/yourusername/koishi-plugin-typbot-render",
+  "author": "Qosmos <qttao@outlook.com>",
+  "contributors": [
+    "Qosmos <qttao@outlook.com>"
+  ],
+  "homepage": "https://github.com/mynanase/koishi-plugin-typbot-render",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/koishi-plugin-typbot-render.git"
+    "url": "git+https://github.com/mynanase/koishi-plugin-typbot-render.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mynanase/koishi-plugin-typbot-render/issues"
   },
   "keywords": [
     "koishi",
@@ -34,7 +40,8 @@
     "koishi": "^4.18.7"
   },
   "dependencies": {
-    "child_process": "^1.0.2"
+    "child_process": "^1.0.2",
+    "koishi-plugin-typbot-render": "^0.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
