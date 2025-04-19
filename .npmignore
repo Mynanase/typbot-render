@@ -1,0 +1,21 @@
+# 源代码
+src/
+tsconfig.json
+
+# 开发工具配置
+.vscode/
+.idea/
+.editorconfig
+
+# 临时文件
+temp/
+*.log
+
+# 测试文件
+test/
+__tests__/
+
+# 其他不需要发布的文件
+.git/
+.github/
+.gitignore

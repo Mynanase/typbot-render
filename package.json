@@ -1,22 +1,52 @@
 {
-  "name": "koishi-plugin-kosmos-typbot",
-  "description": "A plugin for rendering Typst code.",
-  "version": "0.0.1",
+  "name": "koishi-plugin-typbot-render",
+  "description": "A plugin for rendering Typst markup, script and math formulas using local Typst CLI.",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
-    "dist"
+    "dist",
+    "README.md"
   ],
   "license": "MIT",
-  "scripts": {},
+  "author": "Your Name",
+  "homepage": "https://github.com/yourusername/koishi-plugin-typbot-render",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/koishi-plugin-typbot-render.git"
+  },
   "keywords": [
-    "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "typst",
+    "rendering",
+    "math",
+    "markup",
+    "formula"
   ],
-  "devDependencies": {},
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "prepublishOnly": "npm run build"
+  },
   "peerDependencies": {
     "koishi": "^4.18.7"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "koishi": {
+    "description": {
+      "en": "Render Typst markup, script and math formulas using local Typst CLI",
+      "zh": "使用本地 Typst CLI 渲染 Typst 标记、脚本和数学公式"
+    },
+    "service": {
+      "required": []
+    }
   }
 }
