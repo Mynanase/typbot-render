@@ -101,7 +101,7 @@ const typstTemplates = {
   margin: 0.5em,
 )
 #set text(
-  font: ("Source Han Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "SimHei", "SimSun", "Liberation Sans", "Helvetica", "Arial", sans-serif),
+  font: ("Source Han Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "SimHei", "SimSun", "Liberation Sans", "Helvetica", "Arial", "New Computer Modern Sans"),
   size: ${config.fontSize}pt,
   fill: ${processColor(config.color)},
 )
@@ -115,7 +115,7 @@ ${content}
   margin: 0.5em
 )
 #set text(
-  font: ("Source Han Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "SimHei", "SimSun", "Liberation Sans", "Helvetica", "Arial", sans-serif),
+  font: ("Source Han Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "SimHei", "SimSun", "Liberation Sans", "Helvetica", "Arial", "New Computer Modern Sans"),
   size: ${config.fontSize}pt,
   fill: ${processColor(config.color)},
 )
@@ -131,7 +131,7 @@ ${content}
   margin: 0.5em
 )
 #set text(
-  font: ("Source Han Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "SimHei", "SimSun", "Liberation Sans", "Helvetica", "Arial", sans-serif),
+  font: ("Source Han Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "SimHei", "SimSun", "Liberation Sans", "Helvetica", "Arial", "New Computer Modern Sans"),
   size: ${config.fontSize}pt,
   fill: ${processColor(config.color)},
 )
@@ -240,7 +240,7 @@ export async function apply(ctx: Context, config: Config) {
     .option('size', '-s <size:number> 设置字体大小', { fallback: config.fontSize })
     .option('width', '-w <width:string> 设置宽度（auto 或数字）', { fallback: config.width })
     .option('height', '--height <height:string> 设置高度（auto 或数字）', { fallback: config.height })
-    .example('typ #hello("world")')
+    .example('typ #text("Hello World!")')
     .action(async (argv, content) => {
       if (!content) return '请提供 Typst 代码'
       

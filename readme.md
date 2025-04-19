@@ -31,7 +31,7 @@ brew install typst
 ### 标记模式
 
 ```
-/typ #text("Hello World", weight: "bold", size: 16pt)
+/typ Hello World!
 ```
 
 ### 脚本模式
@@ -43,7 +43,7 @@ brew install typst
 ### 数学模式
 
 ```
-/teq x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+/teq x^2 + y^2 = z^2
 ```
 
 ## 命令选项
@@ -58,7 +58,7 @@ brew install typst
 例如：
 
 ```
-/typ -f "blue" -s 20 -w 400 #text("Hello World", weight: "bold")
+/typ -f "blue" -s 20 -w 400 Hello World!
 ```
 
 ## 配置项
